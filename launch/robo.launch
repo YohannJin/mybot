@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="nav_server" pkg="robo" type="nav_server" respawn="true">
+  </node>
+
+  <node name="tag_reader" pkg="robo" type="tag_reader" respawn="true">
+  </node>
+  <!-- <node name="detect_cube" pkg="ep_detect_and_grasp" type="detect_cube.py" respawn="true" output='screen'>
+  </node> -->
+
+  <node name="grasp" pkg="robo" type="grasp.py" respawn="true">
+  </node>
+
+  <node name="place" pkg="robo" type="place.py" respawn="true">
+  </node>
+
+  <node name="run" pkg="robo" type="run" respawn="false">
+  </node>
+</launch>

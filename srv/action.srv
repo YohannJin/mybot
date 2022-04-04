@@ -1,0 +1,5 @@
+string nav_goal
+string grasp
+string place
+---
+bool finish
